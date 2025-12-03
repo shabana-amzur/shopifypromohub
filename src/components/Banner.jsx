@@ -40,7 +40,7 @@ function Banner() {
         >
           <div
             style={{
-              background: 'linear-gradient(135deg, #8f6fff 0%, #6f4aff 100%)',
+              background: '#fff',
               borderRadius: 32,
               boxShadow: '0 8px 32px rgba(0,0,0,0.10)',
               maxWidth: 820,
@@ -57,7 +57,7 @@ function Banner() {
                 fontSize: '2.8rem',
                 fontWeight: 700,
                 margin: 0,
-                color: '#fff',
+                color: '#222',
                 textAlign: 'center',
                 lineHeight: 1.15,
                 fontFamily: 'Poppins, Inter, sans-serif',
@@ -82,7 +82,7 @@ function Banner() {
                   display: 'flex',
                   alignItems: 'center',
                   gap: 8,
-                  color: '#fff',
+                  color: '#222',
                   fontSize: '1.08rem',
                 }}
               >
@@ -103,7 +103,7 @@ function Banner() {
                   display: 'flex',
                   alignItems: 'center',
                   gap: 8,
-                  color: '#fff',
+                  color: '#222',
                   fontSize: '1.08rem',
                 }}
               >
@@ -124,7 +124,7 @@ function Banner() {
                   display: 'flex',
                   alignItems: 'center',
                   gap: 8,
-                  color: '#fff',
+                  color: '#222',
                   fontSize: '1.08rem',
                 }}
               >
@@ -142,54 +142,23 @@ function Banner() {
               </div>
             </div>
 
-            {/* email form */}
-            <form
+            <button
               style={{
-                display: 'flex',
-                width: '100%',
-                maxWidth: 420,
-                gap: 0,
-                marginTop: 12,
-                background: '#fff',
-                borderRadius: 12,
-                boxShadow: '0 2px 12px rgba(67,234,109,0.08)',
-                padding: 6,
+                background: '#8f6fff',
+                color: '#fff',
+                border: 'none',
+                borderRadius: 8,
+                padding: '0 32px',
+                fontWeight: 600,
+                fontSize: '1.08rem',
+                cursor: 'pointer',
+                fontFamily: 'Poppins, Inter, sans-serif',
+                marginTop: 24,
               }}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              <input
-                type="email"
-                placeholder="Your email"
-                style={{
-                  flex: 1,
-                  padding: '16px 18px',
-                  borderRadius: 8,
-                  border: 'none',
-                  fontSize: '1.08rem',
-                  fontFamily: 'Poppins, Inter, sans-serif',
-                  outline: 'none',
-                }}
-              />
-              <button
-                type="submit"
-                style={{
-                  background: '#222',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: 8,
-                  padding: '0 32px',
-                  fontWeight: 600,
-                  fontSize: '1.08rem',
-                  cursor: 'pointer',
-                  fontFamily: 'Poppins, Inter, sans-serif',
-                  marginLeft: 8,
-                }}
-              >
-                Join Our Story →
-              </button>
-            </form>
-
-            {/* example trigger for video */}
-            {/* <button onClick={() => setShowVideo(true)}>Watch Video</button> */}
+              Join Now
+            </button>
           </div>
         </div>
 
