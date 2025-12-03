@@ -115,8 +115,8 @@ function Banner() {
               background: 'rgba(255,255,255,0.85)',
               border: 'none',
               borderRadius: '50%',
-              width: 90,
-              height: 90,
+              width: 110,
+              height: 110,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -128,14 +128,14 @@ function Banner() {
               transition: 'box-shadow 0.2s',
             }}
           >
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="19" cy="19" r="19" fill="#ff9800" />
-              <polygon points="15,12 28,19 15,26" fill="#fff" />
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="24" fill="#ff9800" />
+              <polygon points="19,16 36,24 19,32" fill="#fff" />
             </svg>
             <style>{`
               @keyframes shock {
                 0% { box-shadow: 0 0 0 0 #ff980044; }
-                70% { box-shadow: 0 0 0 16px #ff980000; }
+                70% { box-shadow: 0 0 0 20px #ff980000; }
                 100% { box-shadow: 0 0 0 0 #ff980000; }
               }
             `}</style>
