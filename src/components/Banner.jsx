@@ -1,5 +1,5 @@
 
-import logo from '../assets/logo.png';
+// Use public directory for images
 
 const navLinks = [
   { label: 'Demo', href: '#demo' },
@@ -12,7 +12,7 @@ const navLinks = [
 function Banner() {
   return (
     <section className="banner" style={{
-      background: 'url(/assets/banner-bg.jpg) center center/cover no-repeat',
+      background: 'url(/banner-bg.jpg) center center/cover no-repeat',
       minHeight: '60vh',
       display: 'flex',
       alignItems: 'center',
@@ -30,7 +30,7 @@ function Banner() {
         gap: 32,
         zIndex: 2,
       }}>
-        <img src={logo} alt="Logo" style={{height: 32}} />
+        <img src="/logo.png" alt="Logo" style={{height: 32}} />
         <ul style={{display: 'flex', gap: 24, listStyle: 'none', margin: 0, padding: 0}}>
           {navLinks.map(link => (
             <li key={link.href}>
