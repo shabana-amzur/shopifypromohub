@@ -25,7 +25,8 @@ function Banner() {
     }}>
       {/* White header with logo left and nav right */}
       <header style={{
-        width: '100%',
+        width: 1360,
+        maxWidth: '100%',
         minHeight: 64,
         background: '#fff',
         display: 'flex',
@@ -34,7 +35,7 @@ function Banner() {
         padding: '10px 56px',
         borderRadius: 0,
         boxShadow: 'none',
-        margin: 0,
+        margin: '0 auto',
         position: 'relative',
         zIndex: 10,
         fontFamily: 'Poppins, Inter, sans-serif',
