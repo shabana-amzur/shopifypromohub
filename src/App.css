@@ -1,0 +1,261 @@
+.join-now {
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.join-now h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff9800;
+  margin-bottom: 24px;
+}
+.join-now p {
+  font-size: 1.15rem;
+  color: #222;
+  margin-bottom: 32px;
+}
+.join-now form {
+  display: flex;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.join-now input[type="email"] {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.join-now button {
+  background: #43ea6d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.join-now button:hover {
+  background: #2bbf4b;
+}
+.faq {
+  background: #f7fff7;
+  padding: 60px 0;
+}
+.faq h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff9800;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.faq-list > div {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(67,234,109,0.08);
+  padding: 24px;
+  border-left: 6px solid #43ea6d;
+}
+.faq-list h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+.faq-list p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+}
+.benefits {
+  background: #fff;
+  padding: 60px 0;
+}
+.benefits h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #43ea6d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.benefits-grid > div {
+  background: #f7fff7;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(255,152,0,0.08);
+  padding: 32px;
+  text-align: center;
+  border: 2px solid #ff9800;
+}
+.benefits-grid h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+}
+.benefits-grid p {
+  font-size: 1rem;
+  color: #444;
+}
+.features {
+  background: #f7fff7;
+  padding: 60px 0;
+}
+.features h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff9800;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.features-grid > div {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(67,234,109,0.08);
+  padding: 32px;
+  text-align: center;
+  border: 2px solid #43ea6d;
+}
+.features-grid h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+}
+.features-grid p {
+  font-size: 1rem;
+  color: #444;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.banner {
+  width: 100%;
+  box-sizing: border-box;
+}
+.banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner img {
+  display: block;
+  margin-bottom: 24px;
+}
+.banner h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.banner p {
+  margin: 18px 0 32px 0;
+  font-size: 1.25rem;
+}
+.banner form {
+  display: flex;
+  gap: 12px;
+  max-width: 400px;
+}
+.banner input[type="email"] {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.banner button {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.banner button:hover {
+  background: #e67c00;
+}
+.banner [style*="Demo Video"] {
+  min-width: 220px;
+  min-height: 180px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1.2rem;
+}
+@media (max-width: 900px) {
+  .banner-content {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+  .banner img {
+    margin: 0 auto 24px auto;
+  }
+}
+
+.demo-video {
+  background: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.demo-video h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff9800;
+  margin-bottom: 24px;
+}
+.demo-video iframe {
+  width: 100%;
+  max-width: 720px;
+  height: 405px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(67,234,109,0.08);
+  border: none;
+}
