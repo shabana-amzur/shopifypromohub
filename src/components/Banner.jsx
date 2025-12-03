@@ -19,11 +19,10 @@ function Banner() {
           background: 'url(/banner-bg.jpg) center center/cover no-repeat',
           minHeight: '700px',
           display: 'flex',
-          alignItems: 'flex-start',
+          alignItems: 'center',
           justifyContent: 'flex-start',
           position: 'relative',
           padding: '0',
-          flexDirection: 'column',
         }}
       >
         <div
@@ -32,12 +31,13 @@ function Banner() {
             minHeight: '700px',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
+            justifyContent: 'flex-start',
             position: 'relative',
             zIndex: 1,
             fontFamily: 'Poppins, Inter, sans-serif',
           }}
         >
+          {/* White box left */}
           <div
             style={{
               background: '#fff',
@@ -50,6 +50,7 @@ function Banner() {
               flexDirection: 'column',
               alignItems: 'flex-start',
               gap: 28,
+              marginRight: 48,
             }}
           >
             <h1 style={{ fontSize: '3rem', fontWeight: 700, margin: 0, color: '#222', lineHeight: 1.1 }}>
@@ -65,6 +66,50 @@ function Banner() {
                 Join now
               </button>
             </form>
+          </div>
+          {/* Play button right */}
+          <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <button
+              onClick={() => setShowVideo(true)}
+              style={{
+                background: '#fff',
+                border: 'none',
+                borderRadius: '50%',
+                width: 100,
+                height: 100,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+                cursor: 'pointer',
+                position: 'relative',
+                animation: 'shock 1.2s infinite',
+              }}
+            >
+              <span style={{
+                display: 'block',
+                width: 56,
+                height: 56,
+                background: '#ff9800',
+                borderRadius: '50%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
+              }}>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="16" fill="#fff" />
+                  <polygon points="13,10 24,16 13,22" fill="#ff9800" />
+                </svg>
+              </span>
+            </button>
+            <style>{`
+              @keyframes shock {
+                0% { transform: scale(1); box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
+                50% { transform: scale(1.08); box-shadow: 0 8px 32px rgba(255,152,0,0.18); }
+                100% { transform: scale(1); box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
+              }
+            `}</style>
           </div>
         </div>
 
