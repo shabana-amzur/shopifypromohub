@@ -58,7 +58,7 @@ const features = [
 function Features() {
   return (
     <section className="features" style={{background: '#fff', padding: '70px 0'}}>
-      <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#fff', textAlign: 'left', marginBottom: 32, fontFamily: 'Poppins, Inter, sans-serif'}}>App Features: What makes it stand out?</h2>
+      <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 32, fontFamily: 'Poppins, Inter, sans-serif'}}>App Features: What makes it stand out?</h2>
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
@@ -69,21 +69,21 @@ function Features() {
       }}>
         {features.map((f, i) => (
           <div key={i} style={{
-            background: 'rgba(255,255,255,0.04)',
+            background: '#fff',
             borderRadius: 18,
             boxShadow: '0 2px 12px rgba(67,234,109,0.08)',
             padding: '32px 28px',
             textAlign: 'left',
-            border: '1.5px solid rgba(255,255,255,0.08)',
+            border: '1.5px solid #eee',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
             gap: 16,
             minHeight: 180,
-            color: '#fff',
+            color: '#222',
           }}>
             <div style={{
-              background: 'rgba(255,255,255,0.08)',
+              background: '#f5f3ff',
               borderRadius: 12,
               width: 48,
               height: 48,
@@ -93,8 +93,8 @@ function Features() {
               marginBottom: 8,
               fontSize: '2rem',
             }}>{f.icon}</div>
-            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#fff', marginBottom: 8}}>{f.title}</div>
-            <div style={{fontSize: '1rem', color: '#ccc', fontWeight: 400}}>{f.desc}</div>
+            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#222', marginBottom: 8}}>{f.title}</div>
+            <div style={{fontSize: '1rem', color: '#444', fontWeight: 400}}>{f.desc}</div>
           </div>
         ))}
       </div>
