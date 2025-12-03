@@ -66,44 +66,42 @@ function Banner() {
             <button type="submit" style={{background: '#222', color: '#fff', border: 'none', borderRadius: 8, padding: '0 32px', fontWeight: 600, fontSize: '1.08rem', cursor: 'pointer', fontFamily: 'Poppins, Inter, sans-serif', marginLeft: 8}}>Join Our Story →</button>
           </form>
         </div>
-      </div>
-        {/* Lightbox video modal */}
-        {showVideo && (
-          <div
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              width: '100vw',
-              height: '100vh',
-              background: 'rgba(0,0,0,0.7)',
-              zIndex: 1000,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-            onClick={() => setShowVideo(false)}
-          >
-            <div style={{position: 'relative', width: '90vw', maxWidth: 720}} onClick={e => e.stopPropagation()}>
-              <iframe
-                width="100%"
-                height="405"
-                src="https://www.youtube.com/embed/0ZAAQGUqua0?autoplay=1"
-                title="Demo Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <button
-                onClick={() => setShowVideo(false)}
-                style={{position: 'absolute', top: 8, right: 8, background: '#fff', border: 'none', borderRadius: '50%', width: 36, height: 36, fontSize: 22, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.12)'}}
-              >
-                ×
-              </button>
-            </div>
+      {/* Lightbox video modal */}
+      {showVideo && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100vw',
+            height: '100vh',
+            background: 'rgba(0,0,0,0.7)',
+            zIndex: 1000,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+          onClick={() => setShowVideo(false)}
+        >
+          <div style={{position: 'relative', width: '90vw', maxWidth: 720}} onClick={e => e.stopPropagation()}>
+            <iframe
+              width="100%"
+              height="405"
+              src="https://www.youtube.com/embed/0ZAAQGUqua0?autoplay=1"
+              title="Demo Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <button
+              onClick={() => setShowVideo(false)}
+              style={{position: 'absolute', top: 8, right: 8, background: '#fff', border: 'none', borderRadius: '50%', width: 36, height: 36, fontSize: 22, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.12)'}}
+            >
+              ×
+            </button>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </section>
   );
 }
