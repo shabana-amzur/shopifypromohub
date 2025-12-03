@@ -1,52 +1,33 @@
 
 const benefits = [
   {
-    icon: 'calculator',
+    icon: '/icons/one app.png',
     title: 'One App, No Chaos',
     desc: 'Replace multiple third-party tools with a single, tailored Shopify app.'
   },
   {
-    icon: 'campaign',
+    icon: '/icons/faster.png',
     title: 'Faster Campaigns',
     desc: 'Launch promotions 60% quicker with ready-to-use templates and automation.'
   },
   {
-    icon: 'customer',
+    icon: '/icons/best-customer-experience.png',
     title: 'Better Customer Experience',
     desc: 'Customers see consistent promotion messaging throughout their journey, avoiding surprises at checkout.'
   },
   {
-    icon: 'cart',
+    icon: '/icons/cart value.png',
     title: 'Higher Cart Value',
     desc: 'Encourage bigger orders with personalized, tiered, and conditional offers.'
   },
   {
-    icon: 'growth',
+    icon: '/icons/growth.png',
     title: 'Ready for Growth',
     desc: 'Scales with your retail strategy without slowing down your site.'
   }
 ];
 
-function getBenefitIcon(name) {
-  const icons = {
-    calculator: (
-      <svg width="45" height="45" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#a259ff" strokeWidth="2"/><rect x="8" y="8" width="8" height="8" rx="2" stroke="#a259ff" strokeWidth="2"/><circle cx="10" cy="10" r="1" fill="#a259ff"/><circle cx="14" cy="10" r="1" fill="#a259ff"/><rect x="10" y="12" width="4" height="2" rx="1" fill="#a259ff"/></svg>
-    ),
-    campaign: (
-      <svg width="45" height="45" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#a259ff" strokeWidth="2"/><rect x="8" y="8" width="8" height="8" rx="2" stroke="#a259ff" strokeWidth="2"/><rect x="10" y="10" width="4" height="2" rx="1" fill="#a259ff"/></svg>
-    ),
-    customer: (
-      <svg width="45" height="45" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#a259ff" strokeWidth="2"/><circle cx="12" cy="10" r="3" stroke="#a259ff" strokeWidth="2"/><rect x="9" y="14" width="6" height="2" rx="1" fill="#a259ff"/></svg>
-    ),
-    cart: (
-      <svg width="45" height="45" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#a259ff" strokeWidth="2"/><rect x="8" y="10" width="8" height="4" rx="2" stroke="#a259ff" strokeWidth="2"/><rect x="10" y="14" width="4" height="2" rx="1" fill="#a259ff"/></svg>
-    ),
-    growth: (
-      <svg width="45" height="45" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#a259ff" strokeWidth="2"/><path d="M8 16l4-4 4 4" stroke="#a259ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-    ),
-  };
-  return icons[name] || null;
-}
+
 
 function Benefits() {
   return (
@@ -87,7 +68,9 @@ function Benefits() {
               marginBottom: 8,
               fontSize: '2rem',
               overflow: 'hidden',
-            }}>{getBenefitIcon(b.icon)}</div>
+            }}>
+              <img src={b.icon} alt={b.title + ' icon'} style={{width: 45, height: 45, objectFit: 'contain'}} />
+            </div>
             <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#a259ff', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{b.title}</div>
             <div style={{fontSize: '1rem', color: '#ccc', fontWeight: 400, fontFamily: 'Poppins, sans-serif'}}>{b.desc}</div>
           </div>
