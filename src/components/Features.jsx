@@ -3,8 +3,8 @@ const features = [
   {
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="12" width="24" height="16" rx="4" stroke="#fff" strokeWidth="2"/>
-        <path d="M14 20l4 4 8-8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="8" y="12" width="24" height="16" rx="4" stroke="#43ea6d" strokeWidth="2"/>
+        <path d="M14 20l4 4 8-8" stroke="#43ea6d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Stackable & Tiered Discounts',
@@ -13,9 +13,9 @@ const features = [
   {
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="10" width="20" height="20" rx="4" stroke="#fff" strokeWidth="2"/>
-        <circle cx="20" cy="20" r="3" stroke="#fff" strokeWidth="2"/>
-        <rect x="16" y="16" width="8" height="8" rx="2" stroke="#fff" strokeWidth="2"/>
+        <rect x="10" y="10" width="20" height="20" rx="4" stroke="#43ea6d" strokeWidth="2"/>
+        <circle cx="20" cy="20" r="3" stroke="#43ea6d" strokeWidth="2"/>
+        <rect x="16" y="16" width="8" height="8" rx="2" stroke="#43ea6d" strokeWidth="2"/>
       </svg>
     ),
     title: 'Dynamic Inclusion/Exclusion Rules',
@@ -24,9 +24,9 @@ const features = [
   {
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="8" width="24" height="16" rx="4" stroke="#fff" strokeWidth="2"/>
-        <rect x="8" y="24" width="24" height="8" rx="2" stroke="#fff" strokeWidth="2"/>
-        <circle cx="32" cy="28" r="2" fill="#fff"/>
+        <rect x="8" y="8" width="24" height="16" rx="4" stroke="#43ea6d" strokeWidth="2"/>
+        <rect x="8" y="24" width="24" height="8" rx="2" stroke="#43ea6d" strokeWidth="2"/>
+        <circle cx="32" cy="28" r="2" fill="#43ea6d"/>
       </svg>
     ),
     title: 'Marketing-Friendly Admin Dashboard',
@@ -35,9 +35,9 @@ const features = [
   {
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="10" width="20" height="20" rx="4" stroke="#fff" strokeWidth="2"/>
-        <path d="M20 14v12" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M14 20h12" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
+        <rect x="10" y="10" width="20" height="20" rx="4" stroke="#43ea6d" strokeWidth="2"/>
+        <path d="M20 14v12" stroke="#43ea6d" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M14 20h12" stroke="#43ea6d" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
     title: 'Diverse Promotion Types',
@@ -46,8 +46,8 @@ const features = [
   {
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="12" width="24" height="16" rx="4" stroke="#fff" strokeWidth="2"/>
-        <path d="M12 24l8-8 8 8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="8" y="12" width="24" height="16" rx="4" stroke="#43ea6d" strokeWidth="2"/>
+        <path d="M12 24l8-8 8 8" stroke="#43ea6d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Full-Funnel Integration',
