@@ -3,7 +3,7 @@ import Features from './components/Features';
 import Benefits from './components/Benefits';
 import FAQ from './components/FAQ';
 import JoinNow from './components/JoinNow';
-import DemoVideo from './components/DemoVideo';
+
 import SeoMeta from './components/SeoMeta';
 import './App.css';
 
@@ -16,7 +16,7 @@ function App() {
         keywords="Shopify, product launch, waitlist, demo, features, benefits, FAQ"
       />
       <Banner />
-      <DemoVideo />
+
       <Features />
       <Benefits />
       <FAQ />
