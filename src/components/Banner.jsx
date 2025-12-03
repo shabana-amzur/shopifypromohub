@@ -12,7 +12,7 @@ const navLinks = [
 function Banner() {
   return (
     <section className="banner" style={{
-      background: 'url(/src/assets/banner-bg.jpg) center center/cover no-repeat',
+      background: 'url(/assets/banner-bg.jpg) center center/cover no-repeat',
       minHeight: '60vh',
       display: 'flex',
       alignItems: 'center',
