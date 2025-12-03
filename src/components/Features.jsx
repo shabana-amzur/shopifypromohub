@@ -29,7 +29,7 @@ const features = [
 
 function Features() {
   return (
-    <section className="features" style={{background: '#fff', padding: '70px 0', fontFamily: 'Poppins, sans-serif'}}>
+    <section className="features" style={{background: '#fff', padding: '70px 0px 70px 0px', fontFamily: 'Poppins, sans-serif'}}>
       <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 32, fontFamily: 'Poppins, sans-serif'}}>App Features: What makes it stand out?</h2>
       <div style={{
         display: 'grid',

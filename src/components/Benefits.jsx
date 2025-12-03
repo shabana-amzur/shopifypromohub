@@ -31,8 +31,8 @@ const benefits = [
 
 function Benefits() {
   return (
-    <section className="benefits" style={{background: '#18171d', padding: '70px 0', fontFamily: 'Poppins, sans-serif'}}>
-      <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#fff', textAlign: 'center', marginBottom: 32, fontFamily: 'Poppins, sans-serif'}}>App Benefits: What do you gain?</h2>
+    <section className="benefits" style={{background: '#f5f3ff', padding: '70px 0px 70px 0px', fontFamily: 'Poppins, sans-serif'}}>
+      <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 32, fontFamily: 'Poppins, sans-serif'}}>App Benefits: What do you gain?</h2>
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
@@ -43,25 +43,25 @@ function Benefits() {
       }}>
         {benefits.map((b, i) => (
           <div key={i} style={{
-            background: 'rgba(255,255,255,0.04)',
-            borderRadius: 18,
+            background: '#fff',
+            borderRadius: 20,
             boxShadow: '0 2px 12px rgba(67,234,109,0.08)',
-            padding: '32px 28px',
+            padding: '36px 32px',
             textAlign: 'left',
-            border: '1.5px solid rgba(255,255,255,0.08)',
+            border: '1.5px solid #eee',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
-            gap: 16,
-            minHeight: 180,
-            color: '#fff',
+            gap: 18,
+            minHeight: 210,
+            color: '#222',
           }}>
             <div style={{
               background: '#f5f3ff',
               borderRadius: 12,
-              width: 64,
-              height: 64,
-              padding: 10,
+              width: 70,
+              height: 70,
+              padding: 5,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -69,10 +69,10 @@ function Benefits() {
               fontSize: '2rem',
               overflow: 'hidden',
             }}>
-              <img src={b.icon} alt={b.title + ' icon'} style={{width: 45, height: 45, objectFit: 'contain'}} />
+              <img src={b.icon} alt={b.title + ' icon'} style={{width: 60, height: 60, objectFit: 'contain'}} />
             </div>
-            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#a259ff', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{b.title}</div>
-            <div style={{fontSize: '1rem', color: '#ccc', fontWeight: 400, fontFamily: 'Poppins, sans-serif'}}>{b.desc}</div>
+            <div style={{fontSize: '1.25rem', fontWeight: 600, color: i === 0 ? '#ff9800' : '#a259ff', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{b.title}</div>
+            <div style={{fontSize: '1rem', color: '#444', fontWeight: 400, fontFamily: 'Poppins, sans-serif'}}>{b.desc}</div>
           </div>
         ))}
       </div>
