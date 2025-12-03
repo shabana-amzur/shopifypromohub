@@ -83,26 +83,29 @@ function Banner() {
           }}
           onClick={() => setShowVideo(false)}
         >
-          <div style={{position: 'relative', width: '90vw', maxWidth: 720}} onClick={e => e.stopPropagation()}>
-            <iframe
-              width="100%"
-              height="405"
-				src="https://www.youtube.com/embed/0ZAAQGUqua0?autoplay=1"
-				title="Demo Video"
-				frameBorder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowFullScreen
-			></iframe>
-			<button
-				onClick={() => setShowVideo(false)}
-				style={{position: 'absolute', top: 8, right: 8, background: '#fff', border: 'none', borderRadius: '50%', width: 36, height: 36, fontSize: 22, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.12)'}}
-			>
-				×
-			</button>
-		</div>
-	}
-	</section>
-);
+          {showVideo && (
+            <div style={{position: 'relative', width: '90vw', maxWidth: 720}} onClick={e => e.stopPropagation()}>
+              <iframe
+                width="100%"
+                height="405"
+                src="https://www.youtube.com/embed/0ZAAQGUqua0?autoplay=1"
+                title="Demo Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <button
+                onClick={() => setShowVideo(false)}
+                style={{position: 'absolute', top: 8, right: 8, background: '#fff', border: 'none', borderRadius: '50%', width: 36, height: 36, fontSize: 22, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.12)'}}
+              >
+                ×
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+    </section>
+  );
 }
 
 export default Banner;
