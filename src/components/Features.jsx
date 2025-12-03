@@ -24,14 +24,43 @@ const features = [
 
 function Features() {
   return (
-    <section className="features" style={{background: '#f7fff7', padding: '60px 0'}}>
-      <h2 style={{fontSize: '2rem', fontWeight: 700, color: '#ff9800', textAlign: 'center', marginBottom: 40}}>Features</h2>
-      <div className="features-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 32, maxWidth: 900, margin: '0 auto'}}>
+    <section className="features" style={{background: '#fff', padding: '70px 0'}}>
+      <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 32, fontFamily: 'Poppins, Inter, sans-serif'}}>Why Teams <span role="img" aria-label="star">⭐</span> Love Working <span role="img" aria-label="handshake">🤝</span> with PromoHub</h2>
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        gap: 36,
+        maxWidth: 1280,
+        margin: '0 auto',
+        fontFamily: 'Poppins, Inter, sans-serif',
+      }}>
         {features.map((f, i) => (
-          <div key={i} style={{background: '#fff', borderRadius: 20, boxShadow: '0 2px 12px rgba(67,234,109,0.08)', padding: 32, textAlign: 'center', border: '2px solid #43ea6d'}}>
-            <div style={{fontSize: '2.5rem', marginBottom: 18}}>{f.icon}</div>
-            <h3 style={{fontSize: '1.2rem', fontWeight: 600, marginBottom: 12, color: '#222'}}>{f.title}</h3>
-            <p style={{fontSize: '1rem', color: '#444'}}>{f.desc}</p>
+          <div key={i} style={{
+            background: '#fff',
+            borderRadius: 20,
+            boxShadow: '0 2px 12px rgba(67,234,109,0.08)',
+            padding: '36px 32px',
+            textAlign: 'left',
+            border: '1.5px solid #eee',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            gap: 18,
+            minHeight: 210,
+          }}>
+            <div style={{
+              background: '#f5f3ff',
+              borderRadius: 12,
+              width: 54,
+              height: 54,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginBottom: 8,
+              fontSize: '2.1rem',
+            }}>{f.icon}</div>
+            <h3 style={{fontSize: '1.25rem', fontWeight: 600, marginBottom: 8, color: '#222', fontFamily: 'Poppins, Inter, sans-serif'}}>{f.title}</h3>
+            <p style={{fontSize: '1.08rem', color: '#444', margin: 0, fontFamily: 'Inter, Poppins, sans-serif'}}>{f.desc}</p>
           </div>
         ))}
       </div>
