@@ -71,7 +71,7 @@ function Benefits() {
             }}>
               <img src={b.icon} alt={b.title + ' icon'} style={{width: 60, height: 60, objectFit: 'contain'}} />
             </div>
-            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#ff9800', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{b.title}</div>
+            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#222', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{b.title}</div>
             <div style={{fontSize: '1rem', color: '#444', fontWeight: 400, fontFamily: 'Poppins, sans-serif'}}>{b.desc}</div>
           </div>
         ))}

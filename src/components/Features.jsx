@@ -69,7 +69,7 @@ function Features() {
             }}>
               <img src={f.icon} alt={f.title + ' icon'} style={{width: 45, height: 45, objectFit: 'contain'}} />
             </div>
-            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#ff9800', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{f.title}</div>
+            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#222', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{f.title}</div>
             <div style={{fontSize: '1rem', color: '#444', fontWeight: 400, fontFamily: 'Poppins, sans-serif'}}>{f.desc}</div>
           </div>
         ))}
