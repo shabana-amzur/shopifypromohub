@@ -29,15 +29,15 @@ const features = [
 
 function Features() {
   return (
-    <section className="features" style={{background: '#fff', padding: '70px 0'}}>
-      <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 32, fontFamily: 'Poppins, Inter, sans-serif'}}>App Features: What makes it stand out?</h2>
+    <section className="features" style={{background: '#fff', padding: '70px 0', fontFamily: 'Poppins, sans-serif'}}>
+      <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 32, fontFamily: 'Poppins, sans-serif'}}>App Features: What makes it stand out?</h2>
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
         gap: 36,
         maxWidth: 1280,
         margin: '0 auto',
-        fontFamily: 'Poppins, Inter, sans-serif',
+        fontFamily: 'Poppins, sans-serif',
       }}>
         {features.map((f, i) => (
           <div key={i} style={{
@@ -69,8 +69,8 @@ function Features() {
             }}>
               <img src={f.icon} alt={f.title + ' icon'} style={{width: 45, height: 45, objectFit: 'contain'}} />
             </div>
-            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#222', marginBottom: 8}}>{f.title}</div>
-            <div style={{fontSize: '1rem', color: '#444', fontWeight: 400}}>{f.desc}</div>
+            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#222', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{f.title}</div>
+            <div style={{fontSize: '1rem', color: '#444', fontWeight: 400, fontFamily: 'Poppins, sans-serif'}}>{f.desc}</div>
           </div>
         ))}
       </div>
