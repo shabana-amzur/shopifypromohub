@@ -102,7 +102,7 @@ function Banner() {
               </button>
             </div>
           )}
-        </div>
+      </div>
     </section>
   );
 }
