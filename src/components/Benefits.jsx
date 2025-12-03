@@ -32,7 +32,7 @@ const benefits = [
 function Benefits() {
   return (
     <section className="benefits" style={{background: '#f5f3ff', padding: '70px 0px 70px 0px', fontFamily: 'Poppins, sans-serif'}}>
-      <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 32, fontFamily: 'Poppins, sans-serif'}}>App Benefits: What do you gain?</h2>
+      <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 20, fontFamily: 'Poppins, sans-serif'}}>App Benefits: What do you gain?</h2>
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
@@ -71,7 +71,7 @@ function Benefits() {
             }}>
               <img src={b.icon} alt={b.title + ' icon'} style={{width: 60, height: 60, objectFit: 'contain'}} />
             </div>
-            <div style={{fontSize: '1.25rem', fontWeight: 600, color: i === 0 ? '#ff9800' : '#a259ff', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{b.title}</div>
+            <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#ff9800', marginBottom: 8, fontFamily: 'Poppins, sans-serif'}}>{b.title}</div>
             <div style={{fontSize: '1rem', color: '#444', fontWeight: 400, fontFamily: 'Poppins, sans-serif'}}>{b.desc}</div>
           </div>
         ))}
