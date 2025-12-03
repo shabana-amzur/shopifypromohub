@@ -57,8 +57,9 @@ function Features() {
             <div style={{
               background: '#f5f3ff',
               borderRadius: 12,
-              width: 48,
-              height: 48,
+              width: 64,
+              height: 64,
+              padding: 10,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -66,7 +67,7 @@ function Features() {
               fontSize: '2rem',
               overflow: 'hidden',
             }}>
-              <img src={f.icon} alt={f.title + ' icon'} style={{width: 32, height: 32, objectFit: 'contain'}} />
+              <img src={f.icon} alt={f.title + ' icon'} style={{width: 45, height: 45, objectFit: 'contain'}} />
             </div>
             <div style={{fontSize: '1.25rem', fontWeight: 600, color: '#222', marginBottom: 8}}>{f.title}</div>
             <div style={{fontSize: '1rem', color: '#444', fontWeight: 400}}>{f.desc}</div>
