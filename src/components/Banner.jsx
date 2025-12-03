@@ -31,8 +31,9 @@ function Banner() {
         justifyContent: 'center',
         boxShadow: 'none',
         margin: 0,
-        position: 'relative',
-        zIndex: 10,
+        position: 'sticky',
+        top: 0,
+        zIndex: 100,
         fontFamily: 'Poppins, Inter, sans-serif',
       }}>
         <div style={{
