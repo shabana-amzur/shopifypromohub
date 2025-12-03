@@ -1,14 +1,4 @@
 
-
-const navLinks = [
-  { label: 'Demo', href: '#demo' },
-  { label: 'Features', href: '#features' },
-  { label: 'Benefits', href: '#benefits' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Join', href: '#join' },
-];
-
-
 import React, { useState } from 'react';
 
 const navLinks = [
