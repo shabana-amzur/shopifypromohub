@@ -1,4 +1,5 @@
 import Banner from './components/Banner';
+import Header from './components/Header';
 import Features from './components/Features';
 import Benefits from './components/Benefits';
 import FAQ from './components/FAQ';
@@ -15,8 +16,8 @@ function App() {
         description="Join the waitlist for our upcoming Shopify Marketplace product. Get early access, see features, benefits, FAQ, and demo video."
         keywords="Shopify, product launch, waitlist, demo, features, benefits, FAQ"
       />
+      <Header />
       <Banner />
-
       <Features />
       <Benefits />
       <FAQ />
