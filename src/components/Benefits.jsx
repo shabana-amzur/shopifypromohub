@@ -76,7 +76,7 @@ function Benefits() {
             color: '#fff',
           }}>
             <div style={{
-              background: 'rgba(162,89,255,0.08)',
+              background: '#f5f3ff',
               borderRadius: 12,
               width: 64,
               height: 64,
