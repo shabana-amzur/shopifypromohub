@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 
 const navLinks = [
@@ -24,26 +25,25 @@ function Banner() {
     }}>
       {/* White header with logo left and nav right */}
       <header style={{
-        width: '100%',
+        maxWidth: 1200,
+        margin: '32px auto 0 auto',
+        borderRadius: 18,
+        background: 'rgba(255,255,255,0.98)',
+        boxShadow: '0 2px 12px rgba(0,0,0,0.04)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'rgba(255,255,255,0.98)',
-        padding: '0 48px',
-        height: 72,
-        position: 'absolute',
-        top: 0,
-        left: 0,
+        padding: '18px 48px',
+        position: 'relative',
         zIndex: 10,
-        boxSizing: 'border-box',
-        boxShadow: '0 2px 12px rgba(0,0,0,0.04)'
+        fontFamily: 'Poppins, Inter, sans-serif',
       }}>
         <img src="/logo.png" alt="Logo" style={{height: 38}} />
         <nav>
           <ul style={{display: 'flex', gap: 32, listStyle: 'none', margin: 0, padding: 0}}>
             {navLinks.map(link => (
               <li key={link.href}>
-                <a href={link.href} style={{color: '#222', fontWeight: 500, fontSize: '1.05rem', textDecoration: 'none', padding: '6px 12px', borderRadius: 6, transition: 'background 0.2s'}}>{link.label}</a>
+                <a href={link.href} style={{color: '#222', fontWeight: 500, fontSize: '1.05rem', textDecoration: 'none', padding: '6px 12px', borderRadius: 6, transition: 'background 0.2s', fontFamily: 'Poppins, Inter, sans-serif'}}>{link.label}</a>
               </li>
             ))}
           </ul>
@@ -52,11 +52,12 @@ function Banner() {
       <div style={{
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         width: '100%',
         height: '700px',
         position: 'relative',
         zIndex: 1,
+        fontFamily: 'Poppins, Inter, sans-serif',
       }}>
         {/* Left: White box */}
         <div style={{
@@ -71,20 +72,20 @@ function Banner() {
           alignItems: 'flex-start',
           gap: 24,
           marginLeft: 96,
-          marginTop: 140,
+          fontFamily: 'Poppins, Inter, sans-serif',
         }}>
-          <h1 style={{fontSize: '3.2rem', fontWeight: 700, margin: 0, color: '#222', lineHeight: 1.1}}>
+          <h1 style={{fontSize: '3.2rem', fontWeight: 700, margin: 0, color: '#222', lineHeight: 1.1, fontFamily: 'Poppins, Inter, sans-serif'}}>
             Smarter Promotions on<br />Shopify,<br />
             <span style={{color: '#43ea6d'}}>All-in-One App.</span>
           </h1>
-          <p style={{fontSize: '1.1rem', color: '#444', margin: '8px 0 0 0'}}>Join the waitlist to get early access and exclusive updates when we launch on Shopify Marketplace.</p>
+          <p style={{fontSize: '1.1rem', color: '#444', margin: '8px 0 0 0', fontFamily: 'Inter, Poppins, sans-serif'}}>Join the waitlist to get early access and exclusive updates when we launch on Shopify Marketplace.</p>
           <form style={{display: 'flex', width: '100%', gap: 8, margin: '18px 0 0 0'}}>
-            <input type="email" placeholder="you@yourmail.com" style={{flex: 1, padding: '12px 16px', borderRadius: 8, border: '1px solid #ccc', fontSize: '1rem'}} />
-            <button type="submit" style={{background: '#ff9800', color: '#fff', border: 'none', borderRadius: 8, padding: '12px 22px', fontWeight: 600, fontSize: '1rem', cursor: 'pointer'}}>Join now</button>
+            <input type="email" placeholder="you@yourmail.com" style={{flex: 1, padding: '12px 16px', borderRadius: 8, border: '1px solid #ccc', fontSize: '1rem', fontFamily: 'Inter, Poppins, sans-serif'}} />
+            <button type="submit" style={{background: '#ff9800', color: '#fff', border: 'none', borderRadius: 8, padding: '12px 22px', fontWeight: 600, fontSize: '1rem', cursor: 'pointer', fontFamily: 'Poppins, Inter, sans-serif'}}>Join now</button>
           </form>
         </div>
         {/* Right: Play button */}
-        <div style={{flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', marginTop: 140}}>
+        <div style={{flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', height: '700px'}}>
           <button
             onClick={() => setShowVideo(true)}
             style={{
@@ -98,7 +99,7 @@ function Banner() {
               justifyContent: 'center',
               boxShadow: '0 4px 24px rgba(67,234,109,0.12)',
               cursor: 'pointer',
-              animation: 'shock 1.2s infinite',
+              animation: 'shock 0.7s infinite',
               outline: 'none',
               position: 'relative',
               transition: 'box-shadow 0.2s',
