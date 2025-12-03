@@ -21,7 +21,7 @@ function App() {
       <Features />
       <Benefits />
       <FAQ />
-      <JoinNow />
+      {/* <JoinNow /> removed as requested */}
     </div>
   );
 }
