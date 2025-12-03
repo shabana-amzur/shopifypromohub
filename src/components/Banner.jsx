@@ -31,7 +31,7 @@ function Banner() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '0 56px',
+        padding: '10px 56px',
         borderRadius: 0,
         boxShadow: 'none',
         margin: 0,
@@ -39,14 +39,29 @@ function Banner() {
         zIndex: 10,
         fontFamily: 'Poppins, Inter, sans-serif',
       }}>
-        <img src="/logo.png" alt="Logo" style={{height: 32, marginRight: 32}} />
+        <img src="/logo.png" alt="Logo" style={{height: 45, marginRight: 32}} />
         <nav>
-          <ul style={{display: 'flex', gap: 36, listStyle: 'none', margin: 0, padding: 0}}>
+          <ul style={{display: 'flex', gap: 36, listStyle: 'none', margin: 0, padding: 0, alignItems: 'center'}}>
             {navLinks.map(link => (
               <li key={link.href}>
                 <a href={link.href} style={{color: '#222', fontWeight: 500, fontSize: '1.08rem', textDecoration: 'none', padding: '6px 12px', borderRadius: 6, transition: 'background 0.2s', fontFamily: 'Poppins, Inter, sans-serif'}}>{link.label}</a>
               </li>
             ))}
+            <li>
+              <a href="#join" style={{
+                background: '#ff9800',
+                color: '#fff',
+                fontWeight: 600,
+                fontSize: '1.08rem',
+                textDecoration: 'none',
+                padding: '10px 22px',
+                borderRadius: 8,
+                marginLeft: 12,
+                fontFamily: 'Poppins, Inter, sans-serif',
+                transition: 'background 0.2s',
+                display: 'inline-block',
+              }}>Join now</a>
+            </li>
           </ul>
         </nav>
       </header>
