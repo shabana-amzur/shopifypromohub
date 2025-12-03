@@ -1,9 +1,44 @@
 
 import logo from '../assets/logo.png';
 
+const navLinks = [
+  { label: 'Demo', href: '#demo' },
+  { label: 'Features', href: '#features' },
+  { label: 'Benefits', href: '#benefits' },
+  { label: 'FAQ', href: '#faq' },
+  { label: 'Join', href: '#join' },
+];
+
 function Banner() {
   return (
-    <section className="banner" style={{background: 'linear-gradient(120deg, #ff9800 0%, #43ea6d 100%)', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 0'}}>
+    <section className="banner" style={{
+      background: 'url(/src/assets/banner-bg.jpg) center center/cover no-repeat',
+      minHeight: '60vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'flex-start',
+      position: 'relative',
+      padding: '0',
+    }}>
+      <nav style={{
+        position: 'absolute',
+        top: 32,
+        left: 48,
+        right: 0,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 32,
+        zIndex: 2,
+      }}>
+        <img src={logo} alt="Logo" style={{height: 32}} />
+        <ul style={{display: 'flex', gap: 24, listStyle: 'none', margin: 0, padding: 0}}>
+          {navLinks.map(link => (
+            <li key={link.href}>
+              <a href={link.href} style={{color: '#fff', fontWeight: 500, fontSize: '1rem', textDecoration: 'none', padding: '6px 12px', borderRadius: 6, transition: 'background 0.2s'}}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
       <div style={{
         background: '#fff',
         borderRadius: 24,
@@ -15,9 +50,10 @@ function Banner() {
         flexDirection: 'column',
         alignItems: 'flex-start',
         gap: 24,
-        margin: '0 24px',
+        marginLeft: 64,
+        marginTop: 80,
+        zIndex: 1,
       }}>
-        <img src={logo} alt="Logo" style={{height: 40, marginBottom: 12}} />
         <h1 style={{fontSize: '2.2rem', fontWeight: 700, margin: 0, color: '#222', lineHeight: 1.15}}>
           Making product launches easy,<br />
           <span style={{color: '#43ea6d'}}>for everyone.</span>
