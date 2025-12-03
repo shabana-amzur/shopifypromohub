@@ -25,25 +25,26 @@ function Banner() {
     }}>
       {/* White header with logo left and nav right */}
       <header style={{
-        maxWidth: 1200,
-        margin: '32px auto 0 auto',
-        borderRadius: 18,
-        background: 'rgba(255,255,255,0.98)',
-        boxShadow: '0 2px 12px rgba(0,0,0,0.04)',
+        width: '100%',
+        minHeight: 64,
+        background: '#fff',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '18px 48px',
+        padding: '0 56px',
+        borderRadius: 0,
+        boxShadow: 'none',
+        margin: 0,
         position: 'relative',
         zIndex: 10,
         fontFamily: 'Poppins, Inter, sans-serif',
       }}>
-        <img src="/logo.png" alt="Logo" style={{height: 38}} />
+        <img src="/logo.png" alt="Logo" style={{height: 32, marginRight: 32}} />
         <nav>
-          <ul style={{display: 'flex', gap: 32, listStyle: 'none', margin: 0, padding: 0}}>
+          <ul style={{display: 'flex', gap: 36, listStyle: 'none', margin: 0, padding: 0}}>
             {navLinks.map(link => (
               <li key={link.href}>
-                <a href={link.href} style={{color: '#222', fontWeight: 500, fontSize: '1.05rem', textDecoration: 'none', padding: '6px 12px', borderRadius: 6, transition: 'background 0.2s', fontFamily: 'Poppins, Inter, sans-serif'}}>{link.label}</a>
+                <a href={link.href} style={{color: '#222', fontWeight: 500, fontSize: '1.08rem', textDecoration: 'none', padding: '6px 12px', borderRadius: 6, transition: 'background 0.2s', fontFamily: 'Poppins, Inter, sans-serif'}}>{link.label}</a>
               </li>
             ))}
           </ul>
