@@ -24,74 +24,51 @@ function Banner() {
       flexDirection: 'column',
     }}>
       <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
         width: '100%',
-        height: '700px',
+        minHeight: '700px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         position: 'relative',
         zIndex: 1,
         fontFamily: 'Poppins, Inter, sans-serif',
       }}>
-        {/* Left: White box */}
         <div style={{
-          background: '#fff',
-          borderRadius: 24,
+          background: 'linear-gradient(135deg, #8f6fff 0%, #6f4aff 100%)',
+          borderRadius: 32,
           boxShadow: '0 8px 32px rgba(0,0,0,0.10)',
-          maxWidth: 480,
+          maxWidth: 820,
           width: '100%',
-          padding: '56px 44px 44px 44px',
+          padding: '64px 48px',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'flex-start',
-          gap: 24,
-          marginLeft: 96,
-          fontFamily: 'Poppins, Inter, sans-serif',
+          alignItems: 'center',
+          gap: 32,
         }}>
-          <h1 style={{fontSize: '3.2rem', fontWeight: 700, margin: 0, color: '#222', lineHeight: 1.1, fontFamily: 'Poppins, Inter, sans-serif'}}>
-            Smarter Promotions on<br />Shopify,<br />
-            <span style={{color: '#43ea6d'}}>All-in-One App.</span>
+          <h1 style={{fontSize: '2.8rem', fontWeight: 700, margin: 0, color: '#fff', textAlign: 'center', lineHeight: 1.15, fontFamily: 'Poppins, Inter, sans-serif'}}>
+            Learn who we are<br />
+            Build what matters together
           </h1>
-          <p style={{fontSize: '1.1rem', color: '#444', margin: '8px 0 0 0', fontFamily: 'Inter, Poppins, sans-serif'}}>Join the waitlist to get early access and exclusive updates when we launch on Shopify Marketplace.</p>
-          <form style={{display: 'flex', width: '100%', gap: 8, margin: '18px 0 0 0'}}>
-            <input type="email" placeholder="you@yourmail.com" style={{flex: 1, padding: '12px 16px', borderRadius: 8, border: '1px solid #ccc', fontSize: '1rem', fontFamily: 'Inter, Poppins, sans-serif'}} />
-            <button type="submit" style={{background: '#ff9800', color: '#fff', border: 'none', borderRadius: 8, padding: '12px 22px', fontWeight: 600, fontSize: '1rem', cursor: 'pointer', fontFamily: 'Poppins, Inter, sans-serif'}}>Join now</button>
+          <div style={{display: 'flex', gap: 32, justifyContent: 'center', marginBottom: 8}}>
+            <div style={{display: 'flex', alignItems: 'center', gap: 8, color: '#fff', fontSize: '1.08rem'}}>
+              <span style={{display: 'inline-block', width: 18, height: 18, background: '#43ea6d', borderRadius: '50%', marginRight: 6}}></span>
+              Driven by purpose
+            </div>
+            <div style={{display: 'flex', alignItems: 'center', gap: 8, color: '#fff', fontSize: '1.08rem'}}>
+              <span style={{display: 'inline-block', width: 18, height: 18, background: '#43ea6d', borderRadius: '50%', marginRight: 6}}></span>
+              Human-first, always
+            </div>
+            <div style={{display: 'flex', alignItems: 'center', gap: 8, color: '#fff', fontSize: '1.08rem'}}>
+              <span style={{display: 'inline-block', width: 18, height: 18, background: '#43ea6d', borderRadius: '50%', marginRight: 6}}></span>
+              Built for real impact
+            </div>
+          </div>
+          <form style={{display: 'flex', width: '100%', maxWidth: 420, gap: 0, marginTop: 12, background: '#fff', borderRadius: 12, boxShadow: '0 2px 12px rgba(67,234,109,0.08)', padding: 6}}>
+            <input type="email" placeholder="Your email" style={{flex: 1, padding: '16px 18px', borderRadius: 8, border: 'none', fontSize: '1.08rem', fontFamily: 'Poppins, Inter, sans-serif', outline: 'none'}} />
+            <button type="submit" style={{background: '#222', color: '#fff', border: 'none', borderRadius: 8, padding: '0 32px', fontWeight: 600, fontSize: '1.08rem', cursor: 'pointer', fontFamily: 'Poppins, Inter, sans-serif', marginLeft: 8}}>Join Our Story →</button>
           </form>
         </div>
-        {/* Right: Play button */}
-        <div style={{flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', height: '700px'}}>
-          <button
-            onClick={() => setShowVideo(true)}
-            style={{
-              background: 'rgba(255,255,255,0.85)',
-              border: 'none',
-              borderRadius: '50%',
-              width: 110,
-              height: 110,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 4px 24px rgba(67,234,109,0.12)',
-              cursor: 'pointer',
-              animation: 'shock 0.7s infinite',
-              outline: 'none',
-              position: 'relative',
-              transition: 'box-shadow 0.2s',
-            }}
-          >
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="24" fill="#ff9800" />
-              <polygon points="19,16 36,24 19,32" fill="#fff" />
-            </svg>
-            <style>{`
-              @keyframes shock {
-                0% { box-shadow: 0 0 0 0 #ff980044; }
-                70% { box-shadow: 0 0 0 20px #ff980000; }
-                100% { box-shadow: 0 0 0 0 #ff980000; }
-              }
-            `}</style>
-          </button>
-        </div>
+      </div>
         {/* Lightbox video modal */}
         {showVideo && (
           <div
