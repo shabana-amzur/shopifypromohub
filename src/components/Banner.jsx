@@ -43,122 +43,28 @@ function Banner() {
               background: '#fff',
               borderRadius: 32,
               boxShadow: '0 8px 32px rgba(0,0,0,0.10)',
-              maxWidth: 820,
+              maxWidth: 600,
               width: '100%',
-              padding: '64px 48px',
+              padding: '48px 40px',
               display: 'flex',
               flexDirection: 'column',
-              alignItems: 'center',
-              gap: 32,
+              alignItems: 'flex-start',
+              gap: 28,
             }}
           >
-            <h1
-              style={{
-                fontSize: '2.8rem',
-                fontWeight: 700,
-                margin: 0,
-                color: '#222',
-                textAlign: 'center',
-                lineHeight: 1.15,
-                fontFamily: 'Poppins, Inter, sans-serif',
-              }}
-            >
-              Learn who we are
-              <br />
-              Build what matters together
+            <h1 style={{ fontSize: '3rem', fontWeight: 700, margin: 0, color: '#222', lineHeight: 1.1 }}>
+              Smarter<br />Promotions on Shopify,<br />
+              <span style={{ color: '#43ea6d' }}>All-in-One App.</span>
             </h1>
-
-            {/* badges */}
-            <div
-              style={{
-                display: 'flex',
-                gap: 32,
-                justifyContent: 'center',
-                marginBottom: 8,
-              }}
-            >
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 8,
-                  color: '#222',
-                  fontSize: '1.08rem',
-                }}
-              >
-                <span
-                  style={{
-                    display: 'inline-block',
-                    width: 18,
-                    height: 18,
-                    background: '#43ea6d',
-                    borderRadius: '50%',
-                    marginRight: 6,
-                  }}
-                />
-                Driven by purpose
-              </div>
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 8,
-                  color: '#222',
-                  fontSize: '1.08rem',
-                }}
-              >
-                <span
-                  style={{
-                    display: 'inline-block',
-                    width: 18,
-                    height: 18,
-                    background: '#43ea6d',
-                    borderRadius: '50%',
-                    marginRight: 6,
-                  }}
-                />
-                Human-first, always
-              </div>
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 8,
-                  color: '#222',
-                  fontSize: '1.08rem',
-                }}
-              >
-                <span
-                  style={{
-                    display: 'inline-block',
-                    width: 18,
-                    height: 18,
-                    background: '#43ea6d',
-                    borderRadius: '50%',
-                    marginRight: 6,
-                  }}
-                />
-                Built for real impact
-              </div>
-            </div>
-
-            <button
-              style={{
-                background: '#8f6fff',
-                color: '#fff',
-                border: 'none',
-                borderRadius: 8,
-                padding: '0 32px',
-                fontWeight: 600,
-                fontSize: '1.08rem',
-                cursor: 'pointer',
-                fontFamily: 'Poppins, Inter, sans-serif',
-                marginTop: 24,
-              }}
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            >
-              Join Now
-            </button>
+            <p style={{ fontSize: '1.15rem', color: '#222', margin: '18px 0 0 0', fontWeight: 400 }}>
+              Join the waitlist to get early access and exclusive updates<br />when we launch on Shopify Marketplace.
+            </p>
+            <form style={{ display: 'flex', gap: 12, width: '100%', maxWidth: 400, marginTop: 18 }}>
+              <input type="email" placeholder="you@yourmail.com" style={{ flex: 1, padding: '16px 18px', borderRadius: 8, border: '1px solid #ccc', fontSize: '1.08rem', fontFamily: 'Poppins, Inter, sans-serif', outline: 'none' }} />
+              <button type="submit" style={{ background: '#ff9800', color: '#fff', border: 'none', borderRadius: 8, padding: '0 32px', fontWeight: 600, fontSize: '1.08rem', cursor: 'pointer', fontFamily: 'Poppins, Inter, sans-serif' }}>
+                Join now
+              </button>
+            </form>
           </div>
         </div>
 
