@@ -1,11 +1,10 @@
 import React from 'react';
 
 const navLinks = [
-  { label: 'Demo', href: '#demo' },
+  { label: 'Overview', href: '#overview' },
   { label: 'Features', href: '#features' },
   { label: 'Benefits', href: '#benefits' },
   { label: 'FAQ', href: '#faq' },
-  { label: 'Join', href: '#join' },
 ];
 
 function Header() {
@@ -35,7 +34,7 @@ function Header() {
         <img src="/logo.png" alt="Logo" style={{height: 45, marginRight: 32}} />
         <nav>
           <ul style={{display: 'flex', gap: 36, listStyle: 'none', margin: 0, padding: 0, alignItems: 'center'}}>
-            {navLinks.filter(link => link.label !== 'Join').map(link => (
+            {navLinks.map(link => (
               <li key={link.href}>
                 <a href={link.href} style={{color: '#222', fontWeight: 500, fontSize: '1.08rem', textDecoration: 'none', padding: '6px 12px', borderRadius: 6, transition: 'background 0.2s', fontFamily: 'Poppins, Inter, sans-serif'}}>{link.label}</a>
               </li>
