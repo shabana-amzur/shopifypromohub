@@ -1,4 +1,4 @@
-function Benefits() {
+export default function Benefits() {
   return (
     <section id="benefits" className="benefits" style={{background: '#f7fff7', padding: '70px 0px 70px 0px', fontFamily: 'Poppins, sans-serif'}}>
       <h2 style={{fontSize: '2.6rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 20, fontFamily: 'Poppins, sans-serif'}}>App Benefits: What do you gain?</h2>
