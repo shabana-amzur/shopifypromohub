@@ -23,6 +23,7 @@ function Banner() {
       position: 'relative',
       zIndex: 1,
       fontFamily: 'Poppins, Inter, sans-serif',
+      background: 'url(/banner-bg.jpg) center center / cover no-repeat',
     }}>
       <div style={{
         background: '#fff',
