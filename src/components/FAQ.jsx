@@ -43,6 +43,7 @@ function FAQ() {
       <h2 style={{fontSize: '2rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 20}}>FAQs</h2>
       <div className="faq-list" style={{maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24}}>
         <div style={{display: 'flex', flexDirection: 'column', gap: 18}}>
+          {faqs.slice(0, 4).map((f, i) => (
             <div key={i} style={{
               background: 'none',
               borderRadius: 0,
@@ -78,6 +79,7 @@ function FAQ() {
                 <div style={{padding: '0 24px 24px 24px', fontSize: '1.08rem', color: '#666', fontFamily: 'Poppins, sans-serif', background: 'none', transition: 'all 0.2s'}}>{f.a}</div>
               )}
             </div>
+          ))}
           ))}
         </div>
         <div style={{display: 'flex', flexDirection: 'column', gap: 18}}>
