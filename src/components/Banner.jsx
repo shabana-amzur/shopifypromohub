@@ -11,10 +11,10 @@ const navLinks = [
 ];
 
 function Banner() {
-  const [showVideo, setShowVideo] = useState(false);
+  // Removed play button, lightbox, and shock animation
 
   return (
-    <section style={{
+    <section id="banner" style={{
       width: '100%',
       minHeight: '700px',
       display: 'flex',
@@ -51,100 +51,7 @@ function Banner() {
           <button type="submit" style={{ background: '#ff9800', color: '#fff', border: 'none', borderRadius: 8, padding: '12px 22px', fontWeight: 600, fontSize: '1rem', cursor: 'pointer', fontFamily: 'Poppins, Inter, sans-serif' }}>Join now</button>
         </form>
       </div>
-      {/* Play button right */}
-      <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <button
-          onClick={() => setShowVideo(true)}
-          style={{
-            background: '#fff',
-            border: 'none',
-            borderRadius: '50%',
-            width: 100,
-            height: 100,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
-            cursor: 'pointer',
-            position: 'relative',
-            animation: 'shock 1.2s infinite',
-          }}
-        >
-          <span style={{
-            display: 'flex',
-            width: 56,
-            height: 56,
-            background: '#ff9800',
-            borderRadius: '50%',
-            alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
-          }}>
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="16" fill="#fff" />
-              <polygon points="13,10 24,16 13,22" fill="#ff9800" />
-            </svg>
-          </span>
-        </button>
-        <style>{`
-          @keyframes shock {
-            0% { transform: scale(1); box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
-            50% { transform: scale(1.08); box-shadow: 0 8px 32px rgba(255,152,0,0.18); }
-            100% { transform: scale(1); box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
-          }
-        `}</style>
-      </div>
-      {/* Lightbox video modal */}
-      {showVideo && (
-        <div
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100vw',
-            height: '100vh',
-            background: 'rgba(0,0,0,0.7)',
-            zIndex: 1000,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-          onClick={() => setShowVideo(false)}
-        >
-          <div
-            style={{ position: 'relative', width: '90vw', maxWidth: 720 }}
-            onClick={e => e.stopPropagation()}
-          >
-            <iframe
-              width="100%"
-              height="405"
-              src="https://www.youtube.com/embed/0ZAAQGUqua0?autoplay=1"
-              title="Demo Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            <button
-              onClick={() => setShowVideo(false)}
-              style={{
-                position: 'absolute',
-                top: 8,
-                right: 8,
-                background: '#fff',
-                border: 'none',
-                borderRadius: '50%',
-                width: 36,
-                height: 36,
-                fontSize: 22,
-                cursor: 'pointer',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
-              }}
-            >
-              ×
-            </button>
-          </div>
-        </div>
-      )}
+      {/* Play button, lightbox, and shock animation removed as requested */}
     </section>
   );
 }
