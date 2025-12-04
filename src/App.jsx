@@ -4,6 +4,7 @@ import Features from './components/Features';
 import Benefits from './components/Benefits';
 import FAQ from './components/FAQ';
 import JoinNow from './components/JoinNow';
+import OverviewSection from './components/OverviewSection';
 
 import SeoMeta from './components/SeoMeta';
 import './App.css';
@@ -18,7 +19,8 @@ function App() {
       />
       <Header />
       <Banner />
-      <Features />
+        <OverviewSection />
+        <Features />
       <Benefits />
       <FAQ />
       {/* <JoinNow /> removed as requested */}
