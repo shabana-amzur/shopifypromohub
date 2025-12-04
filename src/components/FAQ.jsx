@@ -49,7 +49,7 @@ function FAQ() {
               borderRadius: 18,
               boxShadow: 'none',
               padding: 0,
-                border: 'none',
+              border: 'none',
               overflow: 'hidden',
               transition: 'none',
             }}>
@@ -58,7 +58,8 @@ function FAQ() {
                 style={{
                   width: '100%',
                   background: 'none',
-                  border: 'none',
+                  border: '2px solid #43ea6d',
+                  borderRadius: 14,
                   outline: 'none',
                   textAlign: 'left',
                   padding: '24px',
@@ -96,7 +97,7 @@ function FAQ() {
               borderRadius: 18,
               boxShadow: 'none',
               padding: 0,
-                border: 'none',
+              border: 'none',
               borderLeft: 'none',
               overflow: 'hidden',
               transition: 'none',
@@ -106,7 +107,8 @@ function FAQ() {
                 style={{
                   width: '100%',
                   background: 'none',
-                  border: 'none',
+                  border: '2px solid #43ea6d',
+                  borderRadius: 14,
                   outline: 'none',
                   textAlign: 'left',
                   padding: '24px',
