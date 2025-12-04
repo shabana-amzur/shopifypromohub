@@ -45,8 +45,8 @@ function FAQ() {
         <div style={{display: 'flex', flexDirection: 'column', gap: 18}}>
           {faqs.slice(0, 4).map((f, i) => (
             <div key={i} style={{
-              background: 'none',
-              borderRadius: 0,
+              background: '#fff',
+              borderRadius: 18,
               boxShadow: 'none',
               padding: 0,
               border: 'none',
@@ -73,23 +73,30 @@ function FAQ() {
                 }}
               >
                 {`${i + 1}. ${f.q}`}
-                <span style={{fontSize: 22, color: '#222', fontWeight: 700}}>{openIndex === i ? '−' : '+'}</span>
+                {openIndex === i ? (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 15l5-5 5 5" stroke="#6c6c76" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                ) : (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10l5 5 5-5" stroke="#6c6c76" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                )}
               </button>
               {openIndex === i && (
                 <div style={{padding: '0 24px 24px 24px', fontSize: '1.08rem', color: '#666', fontFamily: 'Poppins, sans-serif', background: 'none', transition: 'all 0.2s'}}>{f.a}</div>
               )}
             </div>
           ))}
-          ))}
         </div>
         <div style={{display: 'flex', flexDirection: 'column', gap: 18}}>
           {faqs.slice(4, 8).map((f, i) => (
             <div key={i+4} style={{
-              background: 'none',
-              borderRadius: 0,
+              background: '#fff',
+              borderRadius: 18,
               boxShadow: 'none',
               padding: 0,
-              border: 'none',
+              border: '2px solid #43ea6d',
               overflow: 'hidden',
               transition: 'none',
             }}>
@@ -113,7 +120,15 @@ function FAQ() {
                 }}
               >
                 {`${i + 5}. ${f.q}`}
-                <span style={{fontSize: 22, color: '#222', fontWeight: 700}}>{openIndex === i+4 ? '−' : '+'}</span>
+                {openIndex === i+4 ? (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 15l5-5 5 5" stroke="#6c6c76" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                ) : (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10l5 5 5-5" stroke="#6c6c76" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                )}
               </button>
               {openIndex === i+4 && (
                 <div style={{padding: '0 24px 24px 24px', fontSize: '1.08rem', color: '#666', fontFamily: 'Poppins, sans-serif', background: 'none', transition: 'all 0.2s'}}>{f.a}</div>
