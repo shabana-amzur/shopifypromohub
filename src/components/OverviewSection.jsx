@@ -20,16 +20,16 @@ function OverviewSection() {
         </p>
       </div>
       <div style={{ flex: 1, maxWidth: 540, minWidth: 340, padding: '0 48px', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-        <div style={{ position: 'relative', width: '100%', height: '100%', maxWidth: 540, minWidth: 340, aspectRatio: '16/9', boxShadow: '0 4px 24px rgba(0,0,0,0.10)', borderRadius: 16, overflow: 'hidden', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ position: 'relative', width: '100%', maxWidth: 540, minWidth: 340, aspectRatio: '16/9', boxShadow: '0 4px 24px rgba(0,0,0,0.10)', borderRadius: 16, overflow: 'hidden', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/0ZAAQGUqua0"
+            src="https://www.youtube.com/embed/0ZAAQGUqua0?autoplay=1"
             title="Demo Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            style={{ borderRadius: 16, width: '100%', height: '100%' }}
+            style={{ borderRadius: 16, width: '100%', aspectRatio: '16/9', height: '100%' }}
           />
         </div>
       </div>

@@ -18,11 +18,11 @@ function App() {
         keywords="Shopify, product launch, waitlist, demo, features, benefits, FAQ"
       />
       <Header />
-      <Banner />
-        <OverviewSection />
-        <Features />
-      <Benefits />
-      <FAQ />
+      <Banner id="banner" />
+      <OverviewSection id="overview" />
+      <Features id="features" />
+      <Benefits id="benefits" />
+      <FAQ id="faq" />
       {/* <JoinNow /> removed as requested */}
     </div>
   );

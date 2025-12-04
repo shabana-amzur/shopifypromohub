@@ -1,6 +1,7 @@
 import React from 'react';
 
 const navLinks = [
+  { label: 'Banner', href: '#banner' },
   { label: 'Overview', href: '#overview' },
   { label: 'Features', href: '#features' },
   { label: 'Benefits', href: '#benefits' },
