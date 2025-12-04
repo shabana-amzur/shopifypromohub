@@ -41,44 +41,85 @@ function FAQ() {
   return (
     <section id="faq" className="faq" style={{background: '#f7fff7', padding: '60px 0'}}>
       <h2 style={{fontSize: '2rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 20}}>FAQs</h2>
-      <div className="faq-list" style={{maxWidth: 700, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 18}}>
-        {faqs.map((f, i) => (
-          <div key={i} style={{
-            background: '#fff',
-            borderRadius: 20,
-            boxShadow: openIndex === i ? '0 4px 24px rgba(67,234,109,0.12)' : '0 2px 12px rgba(67,234,109,0.08)',
-            padding: 0,
-            border: openIndex === i ? '2px solid #43ea6d' : '1.5px solid #eee',
-            overflow: 'hidden',
-            transition: 'box-shadow 0.2s, border 0.2s',
-          }}>
-            <button
-              onClick={() => setOpenIndex(openIndex === i ? null : i)}
-              style={{
-                width: '100%',
-                background: 'none',
-                border: 'none',
-                outline: 'none',
-                textAlign: 'left',
-                padding: '24px',
-                fontSize: '1.15rem',
-                fontWeight: 600,
-                color: '#222',
-                cursor: 'pointer',
-                fontFamily: 'Poppins, sans-serif',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}
-            >
-              {`${i + 1}. ${f.q}`}
-              <span style={{fontSize: 22, color: '#222', fontWeight: 700}}>{openIndex === i ? '−' : '+'}</span>
-            </button>
-            {openIndex === i && (
-              <div style={{padding: '0 24px 24px 24px', fontSize: '1.08rem', color: '#666', fontFamily: 'Poppins, sans-serif', background: 'none', transition: 'all 0.2s'}}>{f.a}</div>
-            )}
-          </div>
-        ))}
+      <div className="faq-list" style={{maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24}}>
+        <div style={{display: 'flex', flexDirection: 'column', gap: 18}}>
+          {faqs.slice(0, 4).map((f, i) => (
+            <div key={i} style={{
+              background: '#fff',
+              borderRadius: 20,
+              boxShadow: openIndex === i ? '0 4px 24px rgba(67,234,109,0.12)' : '0 2px 12px rgba(67,234,109,0.08)',
+              padding: 0,
+              border: openIndex === i ? '2px solid #43ea6d' : '1.5px solid #eee',
+              overflow: 'hidden',
+              transition: 'box-shadow 0.2s, border 0.2s',
+            }}>
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                style={{
+                  width: '100%',
+                  background: 'none',
+                  border: 'none',
+                  outline: 'none',
+                  textAlign: 'left',
+                  padding: '24px',
+                  fontSize: '1.15rem',
+                  fontWeight: 600,
+                  color: '#222',
+                  cursor: 'pointer',
+                  fontFamily: 'Poppins, sans-serif',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                }}
+              >
+                {`${i + 1}. ${f.q}`}
+                <span style={{fontSize: 22, color: '#222', fontWeight: 700}}>{openIndex === i ? '−' : '+'}</span>
+              </button>
+              {openIndex === i && (
+                <div style={{padding: '0 24px 24px 24px', fontSize: '1.08rem', color: '#666', fontFamily: 'Poppins, sans-serif', background: 'none', transition: 'all 0.2s'}}>{f.a}</div>
+              )}
+            </div>
+          ))}
+        </div>
+        <div style={{display: 'flex', flexDirection: 'column', gap: 18}}>
+          {faqs.slice(4, 8).map((f, i) => (
+            <div key={i+4} style={{
+              background: '#fff',
+              borderRadius: 20,
+              boxShadow: openIndex === i+4 ? '0 4px 24px rgba(67,234,109,0.12)' : '0 2px 12px rgba(67,234,109,0.08)',
+              padding: 0,
+              border: openIndex === i+4 ? '2px solid #43ea6d' : '1.5px solid #eee',
+              overflow: 'hidden',
+              transition: 'box-shadow 0.2s, border 0.2s',
+            }}>
+              <button
+                onClick={() => setOpenIndex(openIndex === i+4 ? null : i+4)}
+                style={{
+                  width: '100%',
+                  background: 'none',
+                  border: 'none',
+                  outline: 'none',
+                  textAlign: 'left',
+                  padding: '24px',
+                  fontSize: '1.15rem',
+                  fontWeight: 600,
+                  color: '#222',
+                  cursor: 'pointer',
+                  fontFamily: 'Poppins, sans-serif',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                }}
+              >
+                {`${i + 5}. ${f.q}`}
+                <span style={{fontSize: 22, color: '#222', fontWeight: 700}}>{openIndex === i+4 ? '−' : '+'}</span>
+              </button>
+              {openIndex === i+4 && (
+                <div style={{padding: '0 24px 24px 24px', fontSize: '1.08rem', color: '#666', fontFamily: 'Poppins, sans-serif', background: 'none', transition: 'all 0.2s'}}>{f.a}</div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
