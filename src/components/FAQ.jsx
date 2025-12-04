@@ -39,19 +39,18 @@ import React, { useState } from 'react';
 function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
   return (
-    <section id="faq" className="faq" style={{background: '#f7fff7', padding: '60px 0'}}>
+    <section id="faq" className="faq" style={{background: 'none', padding: '60px 0'}}>
       <h2 style={{fontSize: '2rem', fontWeight: 700, color: '#222', textAlign: 'center', marginBottom: 20}}>FAQs</h2>
       <div className="faq-list" style={{maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24}}>
         <div style={{display: 'flex', flexDirection: 'column', gap: 18}}>
-          {faqs.slice(0, 4).map((f, i) => (
             <div key={i} style={{
-              background: '#fff',
-              borderRadius: 20,
-              boxShadow: openIndex === i ? '0 4px 24px rgba(67,234,109,0.12)' : '0 2px 12px rgba(67,234,109,0.08)',
+              background: 'none',
+              borderRadius: 0,
+              boxShadow: 'none',
               padding: 0,
-              border: openIndex === i ? '2px solid #43ea6d' : '1.5px solid #eee',
+              border: 'none',
               overflow: 'hidden',
-              transition: 'box-shadow 0.2s, border 0.2s',
+              transition: 'none',
             }}>
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
@@ -84,13 +83,13 @@ function FAQ() {
         <div style={{display: 'flex', flexDirection: 'column', gap: 18}}>
           {faqs.slice(4, 8).map((f, i) => (
             <div key={i+4} style={{
-              background: '#fff',
-              borderRadius: 20,
-              boxShadow: openIndex === i+4 ? '0 4px 24px rgba(67,234,109,0.12)' : '0 2px 12px rgba(67,234,109,0.08)',
+              background: 'none',
+              borderRadius: 0,
+              boxShadow: 'none',
               padding: 0,
-              border: openIndex === i+4 ? '2px solid #43ea6d' : '1.5px solid #eee',
+              border: 'none',
               overflow: 'hidden',
-              transition: 'box-shadow 0.2s, border 0.2s',
+              transition: 'none',
             }}>
               <button
                 onClick={() => setOpenIndex(openIndex === i+4 ? null : i+4)}
