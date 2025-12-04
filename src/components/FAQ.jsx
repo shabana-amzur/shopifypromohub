@@ -49,7 +49,7 @@ function FAQ() {
               borderRadius: 18,
               boxShadow: 'none',
               padding: 0,
-              border: '2px solid #43ea6d',
+                border: 'none',
               overflow: 'hidden',
               transition: 'none',
             }}>
@@ -96,7 +96,7 @@ function FAQ() {
               borderRadius: 18,
               boxShadow: 'none',
               padding: 0,
-              border: '2px solid #43ea6d',
+                border: 'none',
               borderLeft: 'none',
               overflow: 'hidden',
               transition: 'none',
