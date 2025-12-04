@@ -50,7 +50,6 @@ function FAQ() {
               boxShadow: 'none',
               padding: 0,
               border: '2px solid #43ea6d',
-              borderLeft: 'none',
               overflow: 'hidden',
               transition: 'none',
             }}>
